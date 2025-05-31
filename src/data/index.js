@@ -19,7 +19,7 @@ const Profile_Menu = [
     icon: <Gear />,
   },
   {
-    title: "Profile",
+    title: "Logout",
     icon: <SignOut />,
   },
 ];
@@ -46,10 +46,78 @@ const Nav_Setting = [
   },
 ];
 
+const MembersList = [
+  {
+    id: 0,
+    img: "https://i.pravatar.cc/300?img=5",
+    name: faker.name.fullName(),
+    online: true,
+  },
+  {
+    id: 1,
+    img: "https://i.pravatar.cc/300?img=6",
+    name: faker.name.fullName(),
+    online: true,
+  },
+  {
+    id: 2,
+    img: "https://i.pravatar.cc/300?img=7",
+    name: faker.name.fullName(),
+    online: true,
+  },
+  {
+    id: 3,
+    img: "https://i.pravatar.cc/300?img=8",
+    name: faker.name.fullName(),
+    online: true,
+  },
+  {
+    id: 4,
+    img: "https://i.pravatar.cc/300?img=9",
+    name: faker.name.fullName(),
+    online: true,
+  },
+]
+
+const CallLogs = [
+  {
+    id: 0,
+    img: "https://i.pravatar.cc/300?img=5",
+    name: faker.name.fullName(),
+    missed: true,
+    incoming: true,
+    online: true,
+  },
+  {
+    id: 1,
+    img: "https://i.pravatar.cc/300?img=6",
+    name: faker.name.fullName(),
+    missed: false,
+    incoming: true,
+    online: false,
+  },
+  {
+    id: 2,
+    img: "https://i.pravatar.cc/300?img=7",
+    name: faker.name.firstName(),
+    missed: true,
+    incoming: false,
+    online: false,
+  },
+  {
+    id: 3,
+    img: "https://i.pravatar.cc/300?img=8",
+    name: faker.name.firstName(),
+    missed: false,
+    incoming: false,
+    online: true,
+  },
+]
+
 const ChatList = [
   {
     id: 0,
-    img: faker.image.avatar(),
+    img: "https://i.pravatar.cc/300?img=5",
     name: faker.name.firstName(),
     msg: faker.music.songName(),
     time: "9:36",
@@ -59,7 +127,7 @@ const ChatList = [
   },
   {
     id: 1,
-    img: faker.image.avatar(),
+    img: "https://i.pravatar.cc/300?img=6",
     name: faker.name.firstName(),
     msg: faker.music.songName(),
     time: "12:02",
@@ -69,7 +137,7 @@ const ChatList = [
   },
   {
     id: 2,
-    img: faker.image.avatar(),
+    img: "https://i.pravatar.cc/300?img=7",
     name: faker.name.firstName(),
     msg: faker.music.songName(),
     time: "10:35",
@@ -79,7 +147,7 @@ const ChatList = [
   },
   {
     id: 3,
-    img: faker.image.avatar(),
+    img: "https://i.pravatar.cc/300?img=8",
     name: faker.name.firstName(),
     msg: faker.music.songName(),
     time: "04:00",
@@ -89,7 +157,7 @@ const ChatList = [
   },
   {
     id: 4,
-    img: faker.image.avatar(),
+    img: "https://i.pravatar.cc/300?img=9",
     name: faker.name.firstName(),
     msg: faker.music.songName(),
     time: "08:42",
@@ -99,7 +167,7 @@ const ChatList = [
   },
   {
     id: 5,
-    img: faker.image.avatar(),
+    img: "https://i.pravatar.cc/300?img=10",
     name: faker.name.firstName(),
     msg: faker.music.songName(),
     time: "08:42",
@@ -109,7 +177,7 @@ const ChatList = [
   },
   {
     id: 6,
-    img: faker.image.avatar(),
+    img: "https://i.pravatar.cc/300?img=11",
     name: faker.name.firstName(),
     msg: faker.music.songName(),
     time: "08:42",
@@ -119,7 +187,7 @@ const ChatList = [
   },
   {
     id: 7,
-    img: faker.image.avatar(),
+    img: "https://i.pravatar.cc/300?img=12",
     name: faker.name.firstName(),
     msg: faker.music.songName(),
     time: "08:42",
@@ -220,6 +288,74 @@ const Message_options = [
   },
 ];
 
+const SHARED_LINKS = [
+
+  {
+    type: "msg",
+    subtype: "link",
+    preview: faker.image.cats(),
+    message: "Yep, I can also do that",
+    incoming: true,
+    outgoing: false,
+  },
+  {
+    type: "msg",
+    subtype: "link",
+    preview: faker.image.cats(),
+    message: "Yep, I can also do that",
+    incoming: true,
+    outgoing: false,
+  },
+  {
+    type: "msg",
+    subtype: "link",
+    preview: faker.image.cats(),
+    message: "Yep, I can also do that",
+    incoming: true,
+    outgoing: false,
+  },
+  {
+    type: "msg",
+    subtype: "link",
+    preview: faker.image.cats(),
+    message: "Yep, I can also do that",
+    incoming: true,
+    outgoing: false,
+  },
+
+]
+
+const SHARED_DOCS = [
+  {
+    type: "msg",
+    subtype: "doc",
+    message: "Yes sure, here you go.",
+    incoming: true,
+    outgoing: false,
+  },
+  {
+    type: "msg",
+    subtype: "doc",
+    message: "Yes sure, here you go.",
+    incoming: true,
+    outgoing: false,
+  },
+  {
+    type: "msg",
+    subtype: "doc",
+    message: "Yes sure, here you go.",
+    incoming: true,
+    outgoing: false,
+  },
+  {
+    type: "msg",
+    subtype: "doc",
+    message: "Yes sure, here you go.",
+    incoming: true,
+    outgoing: false,
+  },
+]
+
 export {
   Profile_Menu,
   Nav_Setting,
@@ -227,4 +363,8 @@ export {
   ChatList,
   Chat_History,
   Message_options,
+  SHARED_LINKS,
+  SHARED_DOCS,
+  CallLogs,
+  MembersList,
 };
